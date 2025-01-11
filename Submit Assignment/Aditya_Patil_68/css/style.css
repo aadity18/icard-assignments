@@ -1,0 +1,629 @@
+@font-face {
+    font-family: 'BhuTuka'; 
+    src: url('../fonts/BhuTukaExpandedOne-Regular.ttf') format('truetype'); 
+  }
+  
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+
+/* Visiting Card Styles */
+.id-card-wrapper-front {
+    position: relative;
+    width: 54.00mm;
+    height: 92mm;
+    margin: 17mm;
+    overflow: hidden;
+}
+
+.id-card-wrapper-front .id-card-background {
+    background-color: #042141;
+    height: 100%;
+}
+.box1{
+    position: relative;
+    top: -8mm;
+    height: 20mm;
+    width: 5mm;
+    background-color: #02B9B3;
+    transform: skewX(-45deg);
+}
+.box2{
+    position: relative;
+    height: 5mm;
+    width: 5mm;
+    background-color: #028580;
+    top: -20mm;
+    left: 14mm;
+}
+.box3{
+    position: relative;
+    height: 20mm;
+    width: 5mm;
+    background-color: #02B9B3;
+    top: -20mm;
+    left: 4mm;
+    transform: skewX(-45deg);
+
+}
+.box4{
+    position: relative;
+    height: 11mm;
+    width: 8mm;
+    background-color: #F9C435;
+    transform: skewX(-49deg);
+    left: 47mm;
+    top: -46.5mm;
+}
+.box5{
+    position: absolute;
+    height: 7mm;
+    width: 7mm;
+    background-color: #D49724;
+    top: 3mm;
+    left: 41mm;
+}
+.box6{
+    position: relative;
+    height: 10mm;
+    width: 6mm;
+    background-color: #02B9B3;
+    top: -42mm;
+    left: 52mm;
+    transform: skewX(-50deg);
+}
+.box7{
+    position: absolute;
+    height: 6mm;
+    width: 6mm;
+    background-color: #028580;
+    top: 24mm;
+    left: 46mm;
+    
+}
+.tri1{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #02B9B3;
+    border-bottom: 30px solid transparent;
+    top: -44mm;
+    left: 52mm;
+}
+.box8{
+    position: relative;
+    width: 3mm;
+    height: 7mm;
+    background-color: #028580;
+    top: -52mm;
+    left: 52mm;
+}
+.box9{
+    position: relative;
+    height: 7mm;
+    width: 4.5mm;
+    background-color: #028580;
+    top: -55mm;
+
+}
+.tri2{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #02B9B3;
+    top: -55mm;
+    left: -6mm;
+}
+.box10{
+    position: relative;
+    width: 6mm;
+    height: 6mm;
+    background-color: #D39620;
+    top: -42mm;
+    left: 2mm;
+}
+.box11{
+    position: relative;
+    width: 6mm;
+    height: 10mm;
+    background-color: #FFC32B;
+    top: -42mm;
+    left: -3mm;
+    transform: skewX(-45deg);
+}
+.tri3{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #D39620;
+    top: -58mm;
+    left: -8mm;
+}
+.box12{
+    position: relative;
+    width: 6mm;
+    height: 13mm;
+    background-color: #02B9B3;
+    top: -77mm;
+    left: 50mm;
+    transform: skewX(-40deg);
+}
+.box13{
+    position: relative;
+    width: 6mm;
+    height: 6mm;
+    background-color: #028580;
+    top: -77mm;
+    left: 44.5mm;
+}
+.tri4{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #F9C435;
+    border-bottom: 30px solid transparent;
+    top: -57.5mm;
+    left: 46mm;
+}
+.box14{
+    position: relative;
+    width: 1.5mm;
+    height: 1.5mm;
+    background-color: #F9C435;
+    top: -150mm;
+    left: 25mm;
+    z-index: 1;
+}
+.box15{
+    position: relative;
+    width: 2.5mm;
+    height: 1.5mm;
+    background-color: #D39620;
+    top: -150.2mm;
+    left: 22.5mm;
+    transform: skewy(-45deg);
+}
+.box16{
+    position: relative;
+    width: 1.5mm;
+    height: 1.5mm;
+    background-color: #F9C435;
+    top: -151.5mm;
+    left: 26.5mm;
+}
+.box17{
+    position: relative;
+    width: 1.8mm;
+    height: 1.5mm;
+    background-color: #D39620;
+    top: -152mm;
+    left: 24.7mm;
+    transform: skewy(-45deg);
+}
+.org-name{
+    position: relative;
+    top: -79mm;
+    left: 20mm;
+    font-size: 3.5mm;
+    color: white;
+}
+.img-box{
+    position: relative;
+    top: -75mm;
+    left: 17mm;
+    width: 19mm;
+    height: 19mm;
+    background-color: #D39620;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo1{
+    position: relative;
+    width: 17mm;
+    height: 17mm;
+}
+.name{
+    position: relative;
+    color: white;
+    font-size: 3.5mm;
+    top: -71mm;
+    left: 13.5mm;
+}
+.position{
+    position: relative;
+    color: white;
+    font-size: 2.5mm;
+    top: -70.5mm;
+    left: 17.5mm;
+}
+.join-date{
+    position: relative;
+    color: white;
+    font-size: 2mm;
+    top: -67mm;
+    left: 18.5mm;
+}
+.expire-date{
+    position: relative;
+    color: white;
+    font-size: 2mm;
+    top: -66.5mm;
+    left: 19mm;
+}
+.signature{
+    position: relative;
+    color: white;
+    font-size: 2mm;
+    top: -63mm;
+    left: 21.5mm;
+}
+.line{
+    position: relative;
+    top: -58mm;
+    left: 8mm;
+    background-color: #EACA57;
+    width: 38mm;
+    height: 0.4mm;
+}
+.department{
+    position: relative;
+    top: -53mm;
+    left: 8mm;
+    font-size: 4mm;
+    font-weight: 700;
+    color: white;
+}
+
+
+.id-card-wrapper-back {
+    position: relative;
+    width: 54.00mm;
+    height: 92mm;
+    margin: 17mm;
+    overflow: hidden;
+    left: 60mm;
+    top: -109mm;
+}
+
+.id-card-wrapper-back .id-card-background {
+    background-color: #042141;
+    height: 100%;
+}
+.rect1{
+    position: relative;
+    width: 5mm;
+    height: 1.3mm;
+    left: 3mm;
+    background-color: #028580;
+}
+.rect2{
+    position: relative;
+    width: 5mm;
+    height: 10mm;
+    left: -2mm;
+    transform: skewX(-45deg);
+    background-color: #02B9B3;
+}
+.rect3{
+    position: relative;
+    width: 6mm;
+    height: 6mm;
+    top: -11mm;
+    left: 49mm;
+    background-color: #D39620;
+    z-index: 1;
+}
+.tri11{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 5mm solid transparent;
+    border-right: 5mm solid transparent;
+    border-top: 6mm solid #FFBF32;
+    top: -17mm;
+    left: 44mm;
+}
+.rect4{
+    position: relative;
+    width: 6mm;
+    height: 6mm;
+    top: 14mm;
+    left: 2.5mm;
+    background-color: #D49525;
+}
+.rect5{
+    position: relative;
+    width: 6mm;
+    height: 10mm;
+    top: 14mm;
+    left: -2.5mm;
+    background-color: #FFC331;
+    transform: skewX(-45deg);
+}
+.tri22{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 3mm solid transparent;
+    border-right: 3mm solid transparent;
+    border-top: 3mm solid #FFC331;
+    top: -2mm;
+    left: -3mm;
+}
+.rect6{
+    position: relative;
+    width: 1.5mm;
+    height: 5mm;
+    top: -10.5mm;
+    left: 52.5mm;
+    background-color: #028580;
+}
+.rect7{
+    position: relative;
+    width: 3mm;
+    height: 12mm;
+    top: -9mm;
+    left: 52.5mm;
+    background-color: #02B9B3;
+    transform: skewY(45deg);
+}
+.rect8{
+    position: relative;
+    width: 6mm;
+    height: 6mm;
+    top: -16.5mm;
+    left: 46.5mm;
+    background-color: #028580;
+}
+.rect9{
+    position: relative;
+    width: 10mm;
+    height: 6mm;
+    top: -11.5mm;
+    left: 46.5mm;
+    background-color: #02B9B3;
+    transform: skewY(45deg);
+}
+.rect10{
+    position: relative;
+    width: 6mm;
+    height: 12mm;
+    background-color: #02B9B3;
+    top: 10mm;
+    left: 3.5mm;
+    transform: skewX(45deg);
+}
+.tri33{
+    position: relative;
+    width: 0;
+  height: 0;
+  border-left: 10mm solid transparent;
+  border-right: 10mm solid transparent;
+  border-bottom: 10mm solid #02B9B3;
+  top: 5mm;
+  left: -12mm;
+}
+.tri44{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 7mm solid transparent;
+    border-right: 7mm solid transparent;
+    border-top: 7mm solid #D49525;
+    top: -6mm;
+    left: 49mm;
+}
+.rect11{
+    position: relative;
+    width: 5mm;
+    height: 8mm;
+    background-color: #FEC32F;
+    top: -21mm;
+    left: 49mm;
+}
+.rect12{
+    position: relative;
+    width: 7mm;
+    height: 6mm;
+    background-color: #FBC62A;
+    top: -21mm;
+    left: 44.9mm;
+    transform: skewX(45deg);
+}
+.rect13{
+    position: relative;
+    width: 6mm;
+    height: 6mm;
+    top: -27mm;
+    left: 36mm;
+    background-color: #D49525;
+}
+.tri-line{
+    position: relative;
+    display: flex;
+    top: -7mm;
+    left: -2mm;
+}
+.tri55{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 2.5mm solid transparent;
+    border-right: 2.5mm solid #FFBF32;
+    border-bottom: 2.5mm solid transparent;
+    top: -80mm;
+    left: 14mm;
+}
+.tri66{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 2.5mm solid transparent;
+    border-right: 2.5mm solid #02B9B3;
+    border-bottom: 2.5mm solid transparent;
+    top: -80mm;
+    left: 16mm;
+}
+.tri77{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 2.5mm solid transparent;
+    border-right: 2.5mm solid #FFBF32;
+    border-bottom: 2.5mm solid transparent;
+    top: -80mm;
+    left: 18mm;
+}
+.tri88{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 2.5mm solid transparent;
+    border-right: 2.5mm solid #02B9B3;
+    border-bottom: 2.5mm solid transparent;
+    top: -80mm;
+    left: 20mm;
+}
+.tri99{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 2.5mm solid transparent;
+    border-right: 2.5mm solid #FFBF32;
+    border-bottom: 2.5mm solid transparent;
+    top: -80mm;
+    left: 22mm;
+}
+.tri00{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 2.5mm solid transparent;
+    border-right: 2.5mm solid #02B9B3;
+    border-bottom: 2.5mm solid transparent;
+    top: -80mm;
+    left: 24mm;
+}
+.rect14{
+    position: relative;
+    width: 100%;
+    height: 3mm;
+    background-color: #042141;
+    top: -90mm;
+    left: 0mm;
+}
+.name2{
+    position: relative;
+    top: -91mm;
+    left: 7mm;
+    color: white;
+    font-size: 5.5mm;
+    font-family: 'Times New Roman', Times, serif;
+}
+.id{
+    position: relative;
+    top: -90.5mm;
+    left: 15mm;
+    color: white;
+    font-size: 4mm;
+    font-family: 'Times New Roman', Times, serif;
+}
+.qr{
+    position: relative;
+    width: 24mm;
+    height: 24mm;
+    background-color: #FAF1D0;
+    top: -87mm;
+    left: 15mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr-img{
+    position: relative;
+    height: 22mm;
+    width: 22mm;
+}
+.phone{
+    position: relative;
+    top: -82mm;
+    left: 10mm;
+    height: 4mm;
+    width: 4mm;
+    background-color: #FAF1D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1mm;
+}
+.phone-img{
+    position: relative;
+    height: 3mm;
+    width: 3mm;
+}
+.phone-num{
+    position: relative;
+    top: -85.5mm;
+    left: 17mm;
+    font-size: 2.5mm;
+    color: #FAF1D0;
+}
+.message{
+    position: relative;
+    top: -82mm;
+    left: 10mm;
+    height: 4mm;
+    width: 4mm;
+    background-color: #FAF1D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1mm;
+}
+.message-img{
+    position: relative;
+    height: 3mm;
+    width: 3mm;
+}
+.message-text{
+    position: relative;
+    top: -85.5mm;
+    left: 17mm;
+    font-size: 2.3mm;
+    color: #FAF1D0;
+}
+.terms{
+    position: relative;
+    top: -80mm;
+    left: 11.5mm;
+    color: #FAF1D0;
+    font-size: 2.5mm;
+}
+.conditions{
+    position: relative;
+    top: -78mm;
+    left: 12mm;
+    color: #FAF1D0;
+    font-size: 2.2mm;
+    font-style: normal;
+}
